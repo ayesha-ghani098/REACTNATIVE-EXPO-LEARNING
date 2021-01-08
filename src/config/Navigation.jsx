@@ -5,6 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../../src/screens/Home';
 import About from '../../src/screens/About';
 import Contact from '../../src/screens/Contact';
+import CameraApp from "../screens/Camera";
+import PhotoPicker from "../screens/Gallery";
+import Map from '../screens/Map';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +23,10 @@ function Navigation() {
          }} name="Home" component={Home} />
         <Stack.Screen  name="About" component={About} />
         <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen name="CameraApp" component={CameraApp} />
+         <Stack.Screen name="PhotoPicker" component={PhotoPicker} />
+  <Stack.Screen name="Map" component={Map} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
